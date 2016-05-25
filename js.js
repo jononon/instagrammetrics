@@ -6,7 +6,7 @@ $(document).ready(function() {
     dataType: 'jsonp',
     crossDomain: true,
     success: function(data) {
-      var sumLikes, numPictures;
+      var sumLikes = 0, numPictures = 0;
       for(i = 0; i<data.data.length; i++) {
         numPictures++;
         sumLikes+=data.data[i].likes.count;

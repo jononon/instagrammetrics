@@ -30,7 +30,3 @@ $(document).ready(function() {
 
   $('#metric').append(((sumLikes/numPictures)/followers)*100);
 });
-
-function update(username) {
-
-}

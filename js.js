@@ -22,7 +22,7 @@ $(document).ready(function() {
     dataType: 'jsonp',
     crossDomain: true,
     success: function(data) {
-      followers = Integer.parseInt(data.counts.followed_by);
+      followers = parseInt(data.counts.followed_by);
     },
     async: false,
     timeout: 5000,
